@@ -32,16 +32,10 @@
         
         <!-- iOS9 whitelisting -->
         <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
-            <array>
-                <string>twitter</string>
-                <string>fb</string>
-                <string>whatsapp</string>
-                <string>itms-apps</string>
-                <string>youtube</string>
-                <string>soundcloud</string>
-                <string>fb-messenger</string>
-                <string>instagram</string>
-            </array>
+            <dict>
+                <key>NSAllowsArbitraryLoads</key>
+                <false/>
+            </dict>
         </config-file>
         
         
